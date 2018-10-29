@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1540333182 source:c:\users\alumno\desktop\trabajo_practico_2\empleados.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Empleados.h"
+	"Herramientas.h"
+
+1540333182 c:\users\alumno\desktop\trabajo_practico_2\empleados.h
+
+1540333182 c:\users\alumno\desktop\trabajo_practico_2\herramientas.h
+
+1540333182 source:c:\users\alumno\desktop\trabajo_practico_2\herramientas.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Herramientas.h"
+
+1540333694 source:c:\users\alumno\desktop\trabajo_practico_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Empleados.h"
+	"Herramientas.h"
+

@@ -127,7 +127,7 @@ int main()
                 switch(opcionOrd){
                     case 1:
                         if(validaNum!=-1){
-                            toUpperLastNameAndNameClients(emp, MAXEMP);
+                            Mayusculas(emp, MAXEMP);
                             sortEmployee(emp,MAXEMP,name,lastName,opcionOrd);
                             printEmployee(emp,MAXEMP);
                             if(totalSalary(emp,MAXEMP)!=-1)
@@ -140,7 +140,7 @@ int main()
                         }
                     break;
                     case 0:
-                        toUpperLastNameAndNameClients(emp, MAXEMP);
+                        Mayusculas(emp, MAXEMP);
                         sortEmployee(emp,MAXEMP,name,lastName,opcionOrd);
                         printEmployee(emp,MAXEMP);
                         if(totalSalary(emp,MAXEMP)!=-1)

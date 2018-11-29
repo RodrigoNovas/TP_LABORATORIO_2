@@ -242,7 +242,7 @@ int excSalary(employee* emp,int MAXEMP){
 }
 
 
-void toUpperLastNameAndNameClients(employee emp[], int len) {
+void Mayusculas(employee emp[], int len) {
     int i;
     int j;
     for (i = 0; i < len; i++) {

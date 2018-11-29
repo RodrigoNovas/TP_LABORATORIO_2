@@ -14,16 +14,7 @@ int main()
     float salary;
     employee emp[MAXEMP];
     do{
-        printf("\tMenu\n");
-        printf("-----------------------BIENVENIDO----------------------------- \n");
-        printf("1- Alta empleados\n");
-        printf("2- Modificar empleados (debera tener empleados cargados)\n");
-        printf("3- Baja empleados (debera tener empleados cargados)\n");
-        printf("4- Imprimir empleados (debera tener empleados cargados/ NOMBRE Y APELLIDO APARECERAN EN MAYUSCULAS)\n");
-        printf("5- Salir\n");
-        printf("--------------------------------------------------------------- \n");
-        fflush(stdin);
-        scanf("%d",&opcion);
+         opcion= menuoption();
          if (!isValidMenu(opcion, 1, 5))
                 {
                     printf("El numero ingresado no es valido.\n");

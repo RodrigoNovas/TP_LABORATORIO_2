@@ -258,4 +258,27 @@ void Mayusculas(employee emp[], int len) {
 }
 
 
+int menuoption(){
+    int opcion;
+do{
+        printf("\tMenu\n");
+        printf("-----------------------BIENVENIDO----------------------------- \n");
+        printf("|                                                          |\n");
+        printf("|1- Alta empleados\n");
+        printf("|                                                          |\n");
+        printf("|2- Modificar empleados (debera tener empleados cargados)\n");
+        printf("|                                                          |\n");
+        printf("|3- Baja empleados (debera tener empleados cargados)\n");
+        printf("|                                                          |\n");
+        printf("|4- Imprimir empleados (debera tener empleados cargados/ NOMBRE Y APELLIDO APARECERAN EN MAYUSCULAS)\n");
+        printf("|                                                          |\n");
+        printf("|5- Salir\n");
+        printf("--------------------------------------------------------------- \n");
+        fflush(stdin);
+        scanf("%d",&opcion);
+}while(opcion!=5);
+return opcion;
+}
+    
 
+    

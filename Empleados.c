@@ -30,17 +30,17 @@ int getFreeSpace(employee* emp, int MAXEMP){
     return retorno;
 }
 
-int addEmployee(employee *emp,int MAXEMP,char* name,
-                char* lastName, float salary,int sector,int id){
+int addEmployee(employee *emp,int MAXEMP,char* nombre,
+                char* apellido, float salario,int sk,int id){
     int i,retorno=-1;
     i=getFreeSpace(emp,MAXEMP);
         if(i!=-1){ //si hay espacio libre
 
             emp[i].isEmpty=0;
-            strcpy(emp[i].name,name);
-            strcpy(emp[i].lastName,lastName);
-            emp[i].salary=salary;
-            emp[i].sector=sector;
+            strcpy(emp[i].name,nombre);
+            strcpy(emp[i].lastName,apellido);
+            emp[i].salary=salario;
+            emp[i].sector=sk;
             emp[i].id=id;
             retorno=0;
 
@@ -185,16 +185,16 @@ int printEmployee(employee* emp,int MAXEMP){
     return retorno;
 }
 
-void modifyEmployee(employee *emp,int MAXEMP,char* name,
-                    char* lastName, float salary,int sector,int id,int opcionModif){
-            if(opcionModif==1)
-            strcpy(emp[id].name,name);
+void modifyEmployee(employee *emp,int MAXEMP,char* nombre,
+                    char* apellido, float salario,int sk,int id,int Modif){
+            if(Modif==1)
+            strcpy(emp[id].name,nombre);
             if(opcionModif==2)
-            strcpy(emp[id].lastName,lastName);
-            if(opcionModif==3)
-            emp[id].salary=salary;
-            if(opcionModif==4)
-            emp[id].sector=sector;
+            strcpy(emp[id].lastName,apellido);
+            if(Modif==3)
+            emp[id].salary=salario;
+            if(Modif==4)
+            emp[id].sector=sk;
 }
 
 int averageSalary(employee* emp,int MAXEMP){
@@ -242,15 +242,15 @@ int excSalary(employee* emp,int MAXEMP){
 }
 
 
-void Mayusculas(employee emp[], int len) {
+void Touperralizar(employee emp[], int CHAR) {
     int i;
     int j;
-    for (i = 0; i < len; i++) {
+    for (i = 0; i < CHAR; i++) {
         for (j = 0; j < strlen(emp[i].lastName); ++j) {
             emp[i].lastName[j] = toupper(emp[i].lastName[j]);
         }
     }
-    for (i = 0; i < len; i++) {
+    for (i = 0; i < CHAR; i++) {
         for (j = 0; j < strlen(emp[i].name); ++j) {
             emp[i].name[j] = toupper(emp[i].name[j]);
         }

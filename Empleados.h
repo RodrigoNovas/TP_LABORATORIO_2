@@ -104,6 +104,6 @@ int excSalary(employee*,int);
  * @param len int size of array
  */
 
-void toUpperLastNameAndNameClients(employee emp[], int );
+void Mayusculas(employee emp[], int );
 
 #endif // ARRAYEMPLOYEES_H_INCLUDED

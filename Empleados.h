@@ -99,11 +99,11 @@ float totalSalary(employee*,int);
  */
 int excSalary(employee*,int);
 /**
- * Turns to upper every single letter of name and last name.
+ * Convierte en mayuscula cada letra de la palabra.
  * @param cliente eCliente* Pointer to array of eCliente
  * @param len int size of array
  */
 
-void Mayusculas(employee emp[], int );
+void Touperralizar(employee emp[], int );
 
 #endif // ARRAYEMPLOYEES_H_INCLUDED

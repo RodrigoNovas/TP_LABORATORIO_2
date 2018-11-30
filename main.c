@@ -18,7 +18,7 @@ int main()
     employee emp[MAXEMP];
     do{
          option= menuoption();
-         if (!isValidMenu(opcion, 1, 5))
+         if (!isValidMenu(option, 1, 5))
                 {
                     printf("El numero ingresado no es valido.\n");
                     option = 0;

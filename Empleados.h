@@ -105,5 +105,12 @@ int excSalary(employee*,int);
  */
 
 void Touperralizar(employee emp[], int );
+/**
+ * \brief Solicita un número al usuario para lograr alguna opcion
+ * \return Retorna opcion numero que pide el menu
+ *
+ */
+
+int menuoption()
 
 #endif // ARRAYEMPLOYEES_H_INCLUDED

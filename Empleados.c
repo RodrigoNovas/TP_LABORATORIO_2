@@ -260,7 +260,7 @@ void Touperralizar(employee emp[], int CHAR) {
 
 int menuoption(){
     int opcion;
-do{
+    
         printf("\tMenu\n");
         printf("-----------------------BIENVENIDO----------------------------- \n");
         printf("|                                                          |\n");
@@ -276,7 +276,7 @@ do{
         printf("--------------------------------------------------------------- \n");
         fflush(stdin);
         scanf("%d",&opcion);
-}while(opcion!=5);
+
 return opcion;
 }
     
